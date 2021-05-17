@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>IMC: Calculo de Massa Corporal</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <h1>Tabela IMC</h1>
+      <table class="table table-hover">
+        <thead>
+          <tr class="table-active">
+            <th scope="col">IMC</th>
+            <th scope="col">Resultado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-warning">
+            <td>Menos que 18.5</td>
+            <td>Abaixo do Peso</td>
+          </tr>
+
+          <tr class="table-info">
+            <td>Entre 18.5 e 24.9</td>
+            <td>Peso Normal</td>
+          </tr>
+          <tr class="table-success">
+            <td>Entre 25 e 29.9</td>
+            <td>Sobrepeso</td>
+          </tr>
+          <tr class="table-danger">
+            <td>Entre 30 e 34.9</td>
+            <td>Obesidade grau 1</td>
+          </tr>
+          <tr class="bg-warning">
+            <td>Entre 35 e 39.9</td>
+            <td>Obesidade grau 2</td>
+          </tr>
+          <tr class="bg-danger">
+            <td>Mais que 40</td>
+            <td>Obesidade grau 3</td>
+          </tr>
+        </tbody>
+      </table>
+      <form id="dataForm" action="">
+        <label class="form-label" for="nameInput class='form-control'"
+          >Nome:<input class="form-control" id="nameInput" type="text"
+        /></label>
+        <label for="surnameInput class='form-control'"
+          >Sobrenome:<input class="form-control" id="surnameInput" class="form-control" type="text"
+        /></label>
+        <label for="weightInput class='form-control'"
+          >Peso: <input class="form-control" id="weightInput" class="form-control" type="text"
+        /></label>
+        <label for="heightInput class='form-control'"
+          >Altura: <input class="form-control" id="heightInput" class="form-control" type="text"
+        /></label>
+      </form>
+      <button type="submit" id="sendButton" class="btn btn-success">Enviar</button>
+      <div id="resultField">
+        <h2 id="h2Element"></h2>
+      </div>
+    </section>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
