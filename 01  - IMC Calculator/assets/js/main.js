@@ -32,4 +32,9 @@ sendButton.addEventListener('click', () => {
   const IMC = (obj.peso / obj.altura ** 2).toFixed(2);
   h2Element.innerText = `Seu IMC é ${IMC} (${checkWeight(IMC)})`;
   resultField.style.backgroundColor = '#00FEC2';
+  if (typeof weightInput.value !== 'number' || typeof heightInput.value !== 'number') {
+    h2Element.innerText = `Altura Inválida`;
+    resultField.style.backgroundColor = 'red';
+    h2Element.style.color = 'white';
+  }
 });

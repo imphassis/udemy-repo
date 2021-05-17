@@ -69,9 +69,24 @@ form button:hover {
   text-align: center;
   margin-top: 20px;
   text-align: center;
+  padding: 5px;
 }
 
 table {
   width: 100%;
   text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+#IMCTable {
+  padding: 5px;
+  border: 2px solid rgb(173, 173, 173);
+}
+
+h3 {
+  font-size: 20px;
+  justify-content: center;
+  font-weight: bold;
 }
